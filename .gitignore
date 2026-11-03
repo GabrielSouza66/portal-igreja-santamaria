@@ -1,0 +1,26 @@
+# Dependências
+/node_modules
+/.pnp
+.pnp.js
+
+# Build de produção do Next.js
+/.next/
+/out/
+
+# Cache
+.eslintcache
+
+# Variáveis de ambiente locais (não versionar chaves privadas)
+.env*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema Operacional e IDEs
+.DS_Store
+*.pem
+.vscode/
+.idea/
+Thumbs.db
