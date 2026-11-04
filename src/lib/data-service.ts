@@ -20,9 +20,9 @@ const defaultSettings: SiteSettings = {
   phone: siteConfig.contact.phone,
   whatsapp: siteConfig.contact.whatsappUrl,
   social_links: {
-    instagram: 'https://instagram.com',
-    youtube: 'https://youtube.com',
-    facebook: 'https://facebook.com',
+    instagram: siteConfig.social.instagram,
+    youtube: siteConfig.social.youtube,
+    facebook: siteConfig.social.facebook,
   },
   seo_defaults: {
     title_suffix: 'IPB Santa Maria DF',
@@ -536,3 +536,4 @@ export async function getUpcomingEvents(): Promise<ChurchEvent[]> {
     return defaultEvents;
   }
 }
+

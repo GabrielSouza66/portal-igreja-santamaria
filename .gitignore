@@ -9,6 +9,7 @@
 
 # Cache
 .eslintcache
+*.tsbuildinfo
 
 # Variáveis de ambiente locais (não versionar chaves privadas)
 .env*.local
@@ -24,3 +25,4 @@ yarn-error.log*
 .vscode/
 .idea/
 Thumbs.db
+

@@ -30,8 +30,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-sans)', 'system-ui', '-apple-system', 'sans-serif'],
-        heading: ['var(--font-heading)', 'var(--font-sans)', 'serif'],
+        sans: ['var(--font-sans)', 'Radley', 'Georgia', 'serif'],
+        heading: ['var(--font-heading)', 'Tilt Warp', 'cursive', 'sans-serif'],
       },
       borderRadius: {
         sm: 'var(--radius-sm)',
@@ -54,3 +54,4 @@ const config: Config = {
 };
 
 export default config;
+

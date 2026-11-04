@@ -22,3 +22,4 @@ export interface NewsFilterParams {
   query?: string;
   page?: number;
 }
+

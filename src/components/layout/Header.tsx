@@ -76,10 +76,10 @@ export function Header() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="font-heading font-bold text-base sm:text-lg leading-tight tracking-tight text-white group-hover:text-emerald-100 transition-colors">
+              <span className="font-heading font-bold text-base sm:text-lg leading-tight tracking-tight uppercase text-white group-hover:text-emerald-100 transition-colors">
                 {siteConfig.shortName}
               </span>
-              <span className="text-xs text-emerald-100/90 hidden sm:block font-normal">
+              <span className="text-[12px] text-emerald-100/90 block font-normal">
                 Santa Maria • Distrito Federal
               </span>
             </div>
@@ -213,3 +213,4 @@ export function Header() {
     </header>
   );
 }
+

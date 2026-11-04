@@ -148,3 +148,4 @@ export interface AuditLog {
   details?: Record<string, unknown> | null;
   created_at: string;
 }
+

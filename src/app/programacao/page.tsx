@@ -11,7 +11,6 @@ import {
   Sparkles,
   HeartHandshake,
   ArrowRight,
-  Info,
 } from 'lucide-react';
 import { getWeeklySchedule, getUpcomingEvents } from '@/lib/data-service';
 import {
@@ -83,12 +82,6 @@ export default async function ProgramacaoPage() {
           <p className="mt-4 text-base sm:text-lg text-[#53655B] leading-relaxed">
             Nossos encontros são momentos especiais de adoração, aprendizado das Escrituras e comunhão fraterna. Todos são muito bem-vindos.
           </p>
-          <div className="mt-4 inline-flex items-center gap-2 text-xs text-[#53655B] bg-white px-3.5 py-2 rounded-lg border border-[#E2E9E4]">
-            <Info className="w-4 h-4 text-[#0D5131]" />
-            <span>
-              Horários no fuso oficial de Brasília (America/Sao_Paulo). O templo abre 30 minutos antes do início de cada atividade.
-            </span>
-          </div>
         </div>
 
         {/* Grade de Encontros Semanais Recorrentes */}
@@ -257,3 +250,4 @@ export default async function ProgramacaoPage() {
     </div>
   );
 }
+

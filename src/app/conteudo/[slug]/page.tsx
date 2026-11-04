@@ -285,3 +285,4 @@ export default async function ContentDetailPage({ params }: Props) {
     </article>
   );
 }
+

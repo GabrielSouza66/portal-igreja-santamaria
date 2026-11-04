@@ -1,15 +1,34 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { siteConfig } from '@/lib/config';
 import { ChurchJsonLd } from '@/components/seo/JsonLd';
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
+// Fonte Radley para textos gerais e corpo do documento
+const radley = localFont({
+  src: [
+    {
+      path: './fonts/Radley-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Radley-Italic.ttf',
+      weight: '400',
+      style: 'italic',
+    },
+  ],
   variable: '--font-sans',
+  display: 'swap',
+});
+
+// Fonte Tilt Warp para títulos institucionais e destaques
+const tiltWarp = localFont({
+  src: './fonts/TiltWarp.ttf',
+  variable: '--font-heading',
+  display: 'swap',
 });
 
 export const viewport: Viewport = {
@@ -90,7 +109,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className={inter.variable}>
+    <html lang="pt-BR" className={`${radley.variable} ${tiltWarp.variable}`}>
       <body className="min-h-screen flex flex-col bg-white text-[#17231C]">
         {/* Acessibilidade WCAG: Pular para Conteúdo Principal */}
         <a href="#conteudo-principal" className="skip-link">
@@ -114,3 +133,4 @@ export default function RootLayout({
     </html>
   );
 }
+

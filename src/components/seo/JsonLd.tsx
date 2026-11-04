@@ -34,6 +34,17 @@ export function ChurchJsonLd({
       addressRegion: 'DF',
       addressCountry: 'BR',
     },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: -16.0309803,
+      longitude: -48.0295574,
+    },
+    hasMap: siteConfig.contact.mapsRouteUrl,
+    sameAs: [
+      siteConfig.social.instagram,
+      siteConfig.social.youtube,
+      siteConfig.social.facebook,
+    ],
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
@@ -134,3 +145,4 @@ export function BreadcrumbsJsonLd({
     />
   );
 }
+

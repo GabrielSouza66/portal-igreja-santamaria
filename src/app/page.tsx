@@ -65,7 +65,8 @@ export default async function HomePage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="https://images.unsplash.com/photo-1548625361-1959779df3bb?auto=format&fit=crop&w=2000&q=80"
-            alt="Interior acolhedor do templo da igreja com luz natural e bancos de madeira"
+            alt=""
+            role="presentation"
             fill
             priority
             sizes="100vw"
@@ -77,11 +78,6 @@ export default async function HomePage() {
 
         {/* Conteúdo Central do Hero */}
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-emerald-100 text-xs sm:text-sm font-medium mb-6">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            Igreja Presbiteriana do Brasil • Santa Maria Sul DF
-          </div>
-
           <h1
             id="hero-title"
             className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight max-w-4xl mx-auto"
@@ -519,3 +515,4 @@ export default async function HomePage() {
     </div>
   );
 }
+

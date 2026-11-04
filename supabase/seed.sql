@@ -23,7 +23,7 @@ INSERT INTO public.site_settings (
     'EQ 304/307 — Santa Maria Sul — Distrito Federal — Brasil',
     '(61) 98299-8554',
     'https://wa.me/5561982998554',
-    '{"instagram": "https://instagram.com", "youtube": "https://youtube.com", "facebook": "https://facebook.com"}'::jsonb,
+    '{"instagram": "https://www.instagram.com/ipbsm_df/", "youtube": "https://www.youtube.com/@ipbsm_DF", "facebook": "https://www.facebook.com/IPB.SMDF"}'::jsonb,
     '{"title_suffix": "IPB Santa Maria DF", "description": "Portal oficial da Igreja em Santa Maria Sul DF. Mensagens, estudos bíblicos, programação semanal e comunidade de fé."}'::jsonb
 ) ON CONFLICT (id) DO NOTHING;
 
@@ -184,3 +184,4 @@ INSERT INTO public.news (
     '2026-10-30 18:00:00+00'
 )
 ON CONFLICT (id) DO NOTHING;
+

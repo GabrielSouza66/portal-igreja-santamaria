@@ -155,3 +155,4 @@ export default async function NoticiasPage({ searchParams }: PageProps) {
     </div>
   );
 }
+

@@ -252,3 +252,4 @@ CREATE POLICY "Admin all schedule" ON public.weekly_schedule FOR ALL TO authenti
 CREATE POLICY "Admin all events" ON public.events FOR ALL TO authenticated USING (public.is_admin()) WITH CHECK (public.is_admin());
 CREATE POLICY "Admin all news" ON public.news FOR ALL TO authenticated USING (public.is_admin()) WITH CHECK (public.is_admin());
 CREATE POLICY "Admin all audit_logs" ON public.audit_logs FOR ALL TO authenticated USING (public.is_admin()) WITH CHECK (public.is_admin());
+

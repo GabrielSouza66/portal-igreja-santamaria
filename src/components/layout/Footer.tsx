@@ -34,10 +34,10 @@ export function Footer() {
                 />
               </div>
               <div>
-                <h3 className="font-heading font-bold text-base text-white">
+                <h3 className="font-heading font-bold text-base text-white uppercase">
                   {siteConfig.shortName}
                 </h3>
-                <p className="text-xs text-emerald-300">Santa Maria • DF</p>
+                <p className="text-[12px] text-emerald-300">Santa Maria • Distrito Federal</p>
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed">
@@ -45,7 +45,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="https://instagram.com"
+                href={siteConfig.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-[#0D5131] transition-colors"
@@ -54,7 +54,7 @@ export function Footer() {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="https://youtube.com"
+                href={siteConfig.social.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-[#0D5131] transition-colors"
@@ -63,7 +63,7 @@ export function Footer() {
                 <Youtube className="w-4 h-4" />
               </a>
               <a
-                href="https://facebook.com"
+                href={siteConfig.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-[#0D5131] transition-colors"
@@ -190,3 +190,4 @@ export function Footer() {
     </footer>
   );
 }
+
