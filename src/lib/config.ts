@@ -9,7 +9,7 @@ export const siteConfig = {
   description:
     'Um lugar para viver a fé e crescer em comunhão. Conheça nossa comunidade, participe dos nossos encontros e acompanhe as mensagens e atividades da semana.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
-  logo: '/logo_ipb.png',
+  logo: '/novalogo.jpeg',
 
   contact: {
     address:

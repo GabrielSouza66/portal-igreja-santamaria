@@ -73,9 +73,9 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/logo_ipb.png',
-        width: 800,
-        height: 800,
+        url: siteConfig.logo,
+        width: 1490,
+        height: 1055,
         alt: `Logotipo da ${siteConfig.name}`,
       },
     ],
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     card: 'summary',
     title: `${siteConfig.shortName} — Igreja em Santa Maria DF`,
     description: siteConfig.description,
-    images: ['/logo_ipb.png'],
+    images: [siteConfig.logo],
   },
   robots: {
     index: true,
@@ -98,8 +98,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/logo_ipb.png',
-    apple: '/logo_ipb.png',
+    icon: siteConfig.logo,
+    apple: siteConfig.logo,
   },
 };
 

@@ -14,7 +14,7 @@ export function ChurchJsonLd({
   name = siteConfig.name,
   description = siteConfig.description,
   url = siteConfig.url,
-  logo = `${siteConfig.url}/logo_ipb.png`,
+  logo = `${siteConfig.url}${siteConfig.logo}`,
   address = siteConfig.contact.address,
   phone = siteConfig.contact.phone,
 }: ChurchJsonLdProps) {
@@ -109,7 +109,7 @@ export function ArticleJsonLd({
       name: siteConfig.name,
       logo: {
         '@type': 'ImageObject',
-        url: `${siteConfig.url}/logo_ipb.png`,
+        url: `${siteConfig.url}${siteConfig.logo}`,
       },
     },
   };

@@ -19,7 +19,7 @@ INSERT INTO public.site_settings (
     'Igreja Presbiteriana do Brasil em Santa Maria',
     'IPB Santa Maria',
     'Um lugar para viver a fé e crescer em comunhão. Conheça nossa comunidade, participe dos nossos encontros e acompanhe as mensagens e atividades da semana.',
-    '/logo_ipb.png',
+    '/novalogo.jpeg',
     'EQ 304/307 — Santa Maria Sul — Distrito Federal — Brasil',
     '(61) 98299-8554',
     'https://wa.me/5561982998554',

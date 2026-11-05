@@ -26,10 +26,10 @@ export default function AdminArquivosPage() {
 
   const currentFiles = [
     {
-      name: 'logo_ipb.png',
-      path: '/logo_ipb.png',
-      size: '22.5 KB',
-      type: 'image/png',
+      name: 'novalogo.jpeg',
+      path: '/novalogo.jpeg',
+      size: '79.3 KB',
+      type: 'image/jpeg',
       date: 'Novembro 2026',
     },
     {
