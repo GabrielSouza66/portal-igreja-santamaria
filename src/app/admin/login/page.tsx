@@ -29,29 +29,20 @@ export default function AdminLoginPage() {
       });
 
       if (error) {
-        // Se as chaves do Supabase ainda forem as de placeholder local, permitimos login de demonstração institucional
-        if (
-          process.env.NEXT_PUBLIC_SUPABASE_URL?.includes('placeholder') ||
-          error.message.includes('fetch') ||
-          error.message.includes('Invalid login')
-        ) {
-          // Salva cookie ou estado de sessão local e redireciona para o dashboard
-          document.cookie = 'admin_session=active; path=/; max-age=86400';
-          router.push('/admin');
-          return;
-        }
-        setErrorMsg(error.message || 'Credenciais inválidas. Verifique seu e-mail e senha.');
+        setErrorMsg('E-mail ou senha incorretos. Verifique os dados digitados.');
         setLoading(false);
         return;
       }
 
-      if (data.session) {
+      if (data?.session) {
+        document.cookie = 'admin_session=active; path=/; max-age=86400; SameSite=Lax';
         router.push('/admin');
+        router.refresh();
+      } else {
+        setErrorMsg('Sessão não iniciada. Verifique suas credenciais.');
       }
     } catch {
-      // Fallback gracioso para ambiente local de desenvolvimento
-      document.cookie = 'admin_session=active; path=/; max-age=86400';
-      router.push('/admin');
+      setErrorMsg('Erro ao tentar conectar ao serviço de autenticação.');
     } finally {
       setLoading(false);
     }
